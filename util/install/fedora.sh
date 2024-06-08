@@ -4,7 +4,7 @@ _qmk_install() {
     echo "Installing dependencies"
 
     . /etc/os-release
-    if [ "$VERSION_ID" == "39" ]; then
+    if [ "$VERSION_ID" == "40" ]; then
         sudo dnf $SKIP_PROMPT copr enable erovia/dfu-programmer
     fi
 
